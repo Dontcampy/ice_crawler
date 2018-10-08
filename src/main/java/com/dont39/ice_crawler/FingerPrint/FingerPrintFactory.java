@@ -5,6 +5,10 @@ public class FingerPrintFactory {
 
     private FingerPrintFactory() {}
 
+    /**
+     * 使用单例模式获取Factory实例
+     * @return factory instance
+     */
     public static FingerPrintFactory getFactory() {
         return fpf;
     }

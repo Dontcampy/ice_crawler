@@ -7,7 +7,7 @@ import org.bson.Document;
 
 public class Result {
     private MongoDatabase db = MongoTool.getMongoClient().getDatabase("crawler");
-    private MongoCollection<Document> coll = db.getCollection("reesult");
+    private MongoCollection<Document> coll = db.getCollection("result");
 
     public void insert(Document document) {
         coll.insertOne(document);
